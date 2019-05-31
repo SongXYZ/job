@@ -48,7 +48,7 @@ class Upload extends Api {
 
         $imgPath = $uploadFolder .  $name . $ext;
         if (move_uploaded_file($tmpName, $imgPath)) {
-            $rs = sprintf('http://fangyiming.natapp1.cc/job/public/uploads/%s%s', $_SERVER['SERVER_NAME'], $name, $ext);
+            $rs = sprintf('http://fangyiming.natapp1.cc/job/public/uploads/%s%s', $name, $ext);
         }
 
         return $rs;

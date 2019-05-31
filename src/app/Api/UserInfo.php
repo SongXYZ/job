@@ -39,6 +39,7 @@ class UserInfo extends Api {
         $this->pswd = md5($this->pswd);
         $upload = new \App\Api\Examples\Upload();
         $imageurl = $upload->go($this->photourl);
+        // return $imageurl;
         $rs = $domain->register($this, $imageurl);
         return $rs;
     }
