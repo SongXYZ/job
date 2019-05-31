@@ -27,7 +27,7 @@ class File extends NotORM
     public function delFile($fid)
     {
       $orm = $this->getORM();
-      $rs = $orm->where('fild', $fid)->delete();
+      $rs = $orm->where('fid', $fid)->delete();
       if($rs === false){
           return array('code' => '0');
       }else{

@@ -52,7 +52,7 @@ class UserInfo extends NotORM
     public function showUserInfo()
     {
         $orm = $this->getORM();
-        $rs = $orm->select('uname', 'gender', 'comstellation', 'resume', 'motto', 'photourl', 'createtime')->fetchAll(); // 没有返回false
+        $rs = $orm->select('uname', 'number', 'gender', 'comstellation', 'resume', 'motto', 'photourl')->fetchAll(); // 没有返回false
         if($rs == false)
         {
                 return array('code' => '0');
