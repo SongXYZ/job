@@ -15,6 +15,7 @@ class UserInfo extends Api {
             ),
             'register' => array(
                 'uname' => array('name' => 'uname', 'require' => true),
+                'number' => array('name' => 'number', 'require' => true),
                 'pswd' => array('name' => 'pswd', 'require' => true),
                 'gender' => array('name' => 'gender', 'require' => true),
                 'comstellation' => array('name' => 'comstellation', 'require' => true),
