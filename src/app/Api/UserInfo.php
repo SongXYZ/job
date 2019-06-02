@@ -10,7 +10,7 @@ class UserInfo extends Api {
     public function getRules() {
         return array(
             'login' => array(
-                'uname' => array('name' => 'uname', 'require' => true),
+                'number' => array('name' => 'number', 'require' => true),
                 'pswd' => array('name' => 'pswd', 'require' => true)
             ),
             'register' => array(
