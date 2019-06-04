@@ -37,7 +37,7 @@ class UserInfo extends NotORM
         // array('uname'=>'','pswd'=>'')
         $orm = $this->getORM();
         // uname gender constellation resume motto photourl createtime
-        $rs = $orm->select('uname', 'number', 'gender', 'comstellation', 'resume', 'motto', 'photourl', 'createtime')->where($data)->fetchOne(); // 没有返回false
+        $rs = $orm->select('uid', 'uname', 'number', 'gender', 'comstellation', 'resume', 'motto', 'photourl', 'createtime')->where($data)->fetchOne(); // 没有返回false
         if($rs == false)
         {
             return array('code' => '0');
