@@ -45,4 +45,14 @@ class File extends Api {
       $rs = $domain->delFile($this->fid);
       return $rs;      
     }
+
+    /**
+     * 显示
+     */
+    public function showFile()
+    {
+      $domain = new \App\Domain\File();
+      $rs = $domain->showFile();
+      return $rs; 
+    }
 } 

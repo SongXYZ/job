@@ -34,4 +34,14 @@ class File extends NotORM
           return array('code' => '1');
       }
     }
+
+    /**
+     * 显示
+     */
+    public function showFile()
+    {
+      $orm = $this->getORM();
+      $rs = $orm->select('fid','filedes','filepath','createtime')->fetchAll();
+      return $rs;
+    }
 }

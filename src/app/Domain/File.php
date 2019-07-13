@@ -27,4 +27,14 @@ class File
       return $rs;  
     }
 
+    /**
+     * 显示
+     */
+    public function showFile()
+    {
+      $model = new \App\Model\File();
+      $rs = $model->showFile();
+      return $rs;
+    }
+
 }
